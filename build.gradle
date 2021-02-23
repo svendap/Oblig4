@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'io.javalin:javalin:3.7.0'
+    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.9'
+    compile 'org.slf4j:slf4j-simple:1.7.26'
+    compile 'org.webjars.npm:vue:2.6.10'
+}
+
+test {
+    useJUnitPlatform()
+}
