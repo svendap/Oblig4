@@ -10,10 +10,10 @@ repositories {
 }
 
 dependencies {
-    compile 'io.javalin:javalin:3.7.0'
-    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.9'
+    compile 'io.javalin:javalin:3.13.3'
     compile 'org.slf4j:slf4j-simple:1.7.26'
-    compile 'org.webjars.npm:vue:2.6.10'
+    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.12.0'
+    compile 'org.webjars.npm:vue:2.6.12'
 }
 
 test {
