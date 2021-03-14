@@ -26,7 +26,8 @@ public class Application {
 
 
         app.get("/planet-system/:planet-system-id", new VueComponent("planet-system-detail"));
-        app.get("/planet-system/:planet-system-id/planet/:planet-id", new VueComponent("planet-detail"));
+        app.get("/planet-system/:planet-system-id/planets/:planet-id", new VueComponent("planet-detail"));
+
 
         UniverseDataRepository universeRepository = new UniverseDataRepository();
         PlanetSystemController planetSystemController = new PlanetSystemController(universeRepository);
@@ -39,7 +40,7 @@ public class Application {
             }
         });
 
-        app.get("/planet-system/:planet-system-id/planets/:planet-id", new Handler() {
+        app.get("/api/planet-system/:planet-system-id/planets", new Handler() {
             @Override
             public void handle(@NotNull Context ctx) throws Exception {
                 planetSystemController.getSpesificPlanetFromPlanetSystem(ctx);

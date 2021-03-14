@@ -14,6 +14,7 @@ public class PlanetSystem implements Comparable<PlanetSystem>{
         this.name = name;
         this.centerStar = centerStar;
         this.pictureUrl = pictureUrl;
+        planets = new ArrayList<>();
 
     }
 
