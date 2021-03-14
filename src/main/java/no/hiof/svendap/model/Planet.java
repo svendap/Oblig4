@@ -7,8 +7,8 @@ public class Planet extends NaturalSatellite{
     static final double Mearth = 5.972E24;
     static final double Rearth = 6371;
 
-    public Planet(String name, double radius, double mass, double semiMajorAxis, double eccentricity, double orbitalPeriod, Star centralCelestialBody) {
-        super(name, radius, mass, semiMajorAxis, eccentricity, orbitalPeriod, centralCelestialBody);
+    public Planet(String name, double radius, double mass, double semiMajorAxis, double eccentricity, double orbitalPeriod, Star centralCelestialBody, String pictureUrl) {
+        super(name, radius, mass, semiMajorAxis, eccentricity, orbitalPeriod, centralCelestialBody, pictureUrl);
     }
 
 

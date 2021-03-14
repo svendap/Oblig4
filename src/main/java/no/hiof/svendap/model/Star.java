@@ -5,8 +5,8 @@ public class Star extends CelestialBody{
     static final double Msun = 1.98892E30;
     static final double Rsun = 695700;
 
-    public Star(String name, double radius, double mass, int effectiveTemp) {
-        super(name, radius, mass);
+    public Star(String name, double radius, double mass, int effectiveTemp, String pictureUrl) {
+        super(name, radius, mass, pictureUrl);
         this.effectiveTemp = effectiveTemp;
     }
 

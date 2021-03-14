@@ -7,12 +7,14 @@ public class PlanetSystem implements Comparable<PlanetSystem>{
     private String name;
     private Star centerStar;
     private ArrayList<Planet> planets;
+    private String pictureUrl;
 
 
-    public PlanetSystem(String name, Star centerStar, ArrayList<Planet> planets) {
+    public PlanetSystem(String name, Star centerStar, String pictureUrl) {
         this.name = name;
         this.centerStar = centerStar;
-        this.planets = planets;
+        this.pictureUrl = pictureUrl;
+
     }
 
     public Planet getPlanetByName(String name) {
@@ -45,6 +47,10 @@ public class PlanetSystem implements Comparable<PlanetSystem>{
 
     public void setPlanets(ArrayList<Planet> planets) {
         this.planets = planets;
+    }
+
+    public void addPlanet(Planet planet) {
+        planets.add(planet);
     }
 
     public Planet getLargestPlanet() { //finds the largest planet by first checking radius, then mass if radius is equal to another.
