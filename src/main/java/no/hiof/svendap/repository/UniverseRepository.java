@@ -9,7 +9,7 @@ public interface UniverseRepository{
     ArrayList<PlanetSystem> getAllPlanetSystems();
     PlanetSystem getPlanetSystem(String systemName);
     ArrayList<Planet> getAllPlanets(String systemName);
-    Planet getSpesificPlanetFromPlanetSystem(String systemName, String planetId);
+    Planet getSpecificPlanetFromPlanetSystem(String systemName, String planetId);
 
 
 }

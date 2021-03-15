@@ -11,10 +11,10 @@ public class UniverseDataRepository implements UniverseRepository{
 
 
     public UniverseDataRepository() {
-        Star sun = new Star("Sun", 1.9885E30,695342,5777, "http://bit.ly/3cVhuZc");
+        Star sun = new Star("Sun", 1.9885E30,695342,5777, "http://bit.ly/333CTus");
         Star kepler11 = new Star("Kepler-11", 1.889E30,710310,5680, "http://bit.ly/336nzNZ");
 
-        PlanetSystem solarSystem = new PlanetSystem("Solar System", sun, "http://bit.ly/333CTus");
+        PlanetSystem solarSystem = new PlanetSystem("Solar System", sun, "http://bit.ly/3cVhuZc");
         PlanetSystem kepler11System = new PlanetSystem("Keppler-11 system", kepler11, "http://bit.ly/2Iz4jPB");
 
 
@@ -68,7 +68,7 @@ public class UniverseDataRepository implements UniverseRepository{
     }
 
     @Override
-    public Planet getSpesificPlanetFromPlanetSystem(String systemName, String planetId) {
+    public Planet getSpecificPlanetFromPlanetSystem(String systemName, String planetId) {
         PlanetSystem planetSystem = getPlanetSystem(systemName);
 
         for (Planet thisPlanet : planetSystem.getPlanets()) {

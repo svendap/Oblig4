@@ -25,20 +25,4 @@ public class PlanetSystemController {
         PlanetSystem aPlanetSystem = universeRepository.getPlanetSystem(planetSystemId);
         context.json(aPlanetSystem);
     }
-
-    public void getAllPlanets(Context context) {
-        String planetSystemId = context.pathParam(":planet-system-id");
-        ArrayList<Planet> planets = universeRepository.getAllPlanets(planetSystemId);
-
-        context.json(planets);
-    }
-
-    public void getSpesificPlanetFromPlanetSystem(Context context) {
-        String planetSystemId = context.pathParam(":planet-system-id");
-        String planetId = context.pathParam(":planet-id");
-        PlanetSystem aPlanetSystem = universeRepository.getPlanetSystem(planetSystemId);
-        Planet aPlanet = aPlanetSystem.getPlanetByName(planetId);
-
-        context.json(aPlanet);
-    }
 }

@@ -7,6 +7,7 @@ import io.javalin.plugin.rendering.vue.VueComponent;
 import no.hiof.svendap.controller.PlanetController;
 import no.hiof.svendap.controller.PlanetSystemController;
 import no.hiof.svendap.repository.UniverseDataRepository;
+import org.jetbrains.annotations.NotNull;
 
 
 public class Application {
@@ -18,7 +19,7 @@ public class Application {
 
         app.get("/", new Handler() {
             @Override
-            public void handle(Context ctx) throws Exception {
+            public void handle(@NotNull Context ctx) throws Exception {
                 ctx.result("Hello World");
             }
         });
