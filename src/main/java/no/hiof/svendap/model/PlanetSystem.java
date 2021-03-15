@@ -7,7 +7,7 @@ public class PlanetSystem implements Comparable<PlanetSystem>{
     private String name;
     private Star centerStar;
     private ArrayList<Planet> planets;
-    private String pictureUrl;
+    public String pictureUrl;
 
 
     public PlanetSystem(String name, Star centerStar, String pictureUrl) {

@@ -5,7 +5,7 @@
         <img v-if="planet.pictureUrl" class="cover-image" v-bind:src="planet.pictureUrl">
         <img v-else class="cover-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/480px-Icon-round-Question_mark.svg.png">
 
-        <p>The mass of {{planet.name}} is {{planet.mass}} kg, it has a radius of {{planet.radius}} km,
+        <p>The mass of {{planet.name}} is {{planet.massInKg}} kg, it has a radius of {{planet.radiusInKm}} km,
             the eccentricity or the deviation of orbit is from a circularity of {{planet.eccentricity}}.</p>
         <p>It spins around the star {{planet.centralCelestialBody.name}} with an orbiting period of {{planet.orbitalPeriod}} days.</p>
     </div>
