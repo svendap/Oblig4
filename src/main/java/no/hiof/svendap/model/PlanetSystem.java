@@ -85,7 +85,7 @@ public class PlanetSystem implements Comparable<PlanetSystem>{
     }
 
 
-    //Oppgave 2.3
+
     @Override
     public String toString() {
         return name + " has a center star named " + centerStar + "\nand " + planets.size() +  " planets:\n"; //+ Arrays.toString(new ArrayList[]{planets});

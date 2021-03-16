@@ -43,7 +43,5 @@ public class Application {
         app.get("/api/planet-system/:planet-system-id/planets", planetController::getAllPlanets);
 
         app.get("/api/planet-system/:planet-system-id/planets/:planet-id", planetController::getSpecificPlanetFromPlanetSystem);
-
     }
-
 }
